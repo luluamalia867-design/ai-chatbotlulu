@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>AI Chatbot Sederhana</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>AI Chatbot Lulu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="chat-container pink">
+  <div class="header">
+    <span>🤖 AI Lulu</span>
+    <button onclick="gantiTema()">🎨</button>
+  </div>
 
-<div class="chatbox">
-<h2>AI Chatbot 🤖</h2>
-<div id="chat"></div>
-<input type="text" id="userInput" placeholder="Ketik pesan...">
-<button onclick="sendMessage()">Kirim</button>
+  <div id="chat" class="chat-box"></div>
+
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Ketik pesan..." onkeypress="enterKirim(event)">
+    <button onclick="sendMessage()">Kirim</button>
+  </div>
 </div>
-
 
 <script src="script.js"></script>
 </body>
